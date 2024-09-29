@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Estoque LvTec</h1>
+        
+        <div class="content">
+            <!-- Seção do Formulário -->
+            <div class="form-section">
+                <h2>Adicionar Produto</h2>
+                <form id="product-form">
+                    <input type="text" id="product-name" placeholder="Nome do Produto" required>
+                    <input type="number" id="product-quantity" placeholder="Quantidade" required>
+                    <button type="submit" class="add-button">Adicionar Produto</button>
+                </form>
+            </div>
+
+            <!-- Seção da Lista e Pesquisa -->
+            <div class="list-section">
+                <h2>Lista de Produtos</h2>
+                <input type="text" id="search-bar" placeholder="Pesquisar Produto...">
+                <ul id="product-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
